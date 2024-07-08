@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46c190efca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="images/Untitled-removebg-preview.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi I'm <span>Abhinav</span> <br> From Mumbai</h1>
+        </div>
+      </div>
+</div>
+
+<!--About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_0147.png" alt="About Me">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+               <p>I am a passionate web developer with a keen eye for design and detail. My expertise lies in creating visually appealing and user-friendly websites using modern technologies like HTML, CSS, and JavaScript. I thrive on solving complex problems and continuously improving my skills. Apart from coding, I enjoy exploring new design trends and incorporating them into my projects. When I'm not coding, you can find me reading about the latest tech innovations or enjoying outdoor activities.</p>
+               <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                    <li><span>Programming Languages</span><br>C, Java, Python</li>
+                    <li><span>Data Structures and Algorithms</span><br></li>
+                    <li><span>Database Management Systems (DBMS)</span><br></li>
+                    <li><span>Communication Skills</span><br></li>
+                </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2021 - Present</span><br>Database Coordinator</li>
+                    <li><span>June 2024 - July 2024</span><br>Codsoft Intern</li>
+                    
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022 - Present</span><br> B.Tech in Shah Anchor College of Engineering</li>
+                    <li><span>2020-2022</span><br> St.Xaviers's College</li>
+                    <li><span>2011 - 2020</span><br>Shri Sanatan Dharam High School</li>
+                </ul>
+            </div>            
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Interest</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am passionate about web design, which involves creating and maintaining websites with a strong focus on aesthetics, usability, and functionality. I enjoy working on visual design, responsive layouts, and leveraging my technical skills in HTML, CSS, and JavaScript.</p>
+                <a href="https://www.geeksforgeeks.org/web-design/">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design captivates me as it focuses on optimizing user interactions and experiences with digital products. I love engaging in research, wireframing, prototyping, and creating intuitive and engaging interfaces that enhance the user experience.</p>
+                <a href="https://www.uxdesigninstitute.com/blog/what-is-ui-design/">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Development</h2>
+                <p>App development is a key interest of mine, involving the creation of mobile and desktop applications that prioritize functionality, user experience, and visual appeal. I am adept at understanding platform-specific guidelines and implementing interactive design principles.</p>
+                <a href="https://www.geeksforgeeks.org/android-app-development-fundamentals-for-beginners/">learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--Portfolio section-->
+<div id="portfolio">
+    <div class="container">
+       <h1 class="sub-title">My Work</h1>
+       <div class="work-list">
+        <div class="work">
+            <img src="/images/smrt_dust.png" alt="Social Media App">
+            <div class="layer">
+                <h3>Smart Dustbin</h3>
+                <p>We developed a smart waste management system using advanced technology to manage resources efficiently and at minimal costs. This IoT-based project uses Arduino for code execution and ultrasonic sensors to automate lid operation.Users can control the smart dustbin via Bluetooth technology through their mobile devices.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/images/data_Sim.png" alt="Music App">
+            <div class="layer">
+                <h3>Simulation Website</h3>
+                <p>Welcome to our data structures website! Here, we'll dive into the fundamental building blocks of organizing and storing data in computer science. Explore various data structures such as stacks, queues. Additionally we have also introduced Searching Algorithms such as Linear Search as well as Binary Search and Sorting Algorithms like Bubble sort as well as Selection sort.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/images/cal.png" alt="Online Shopping App">
+            <div class="layer">
+                <h3>Scientific Calculator</h3>
+                <p>I developed a versatile calculator using HTML, CSS, and JS. This robust tool not only performs standard algebraic calculations but also supports trigonometric functions.Additionally, it includes features for finding areas of various shapes, calculating squares, square roots, and cubes, making it an essential resource for both academic and practical applications.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+       </div>
+       <a href="https://drive.google.com/drive/folders/1VvtEVesu8LFdSEVvM2NULzWuA_iYJhxs?usp=sharing" class="btn">See more</a>
+    </div>
+</div>
+
+<!--Contact Section-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i><span class="email-protected">jaiswalabhinav89@gmail.com</span></p>
+                <p><i class="fa-solid fa-phone"></i><span class="phone-protected">7738052789</span></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100010338938991&mibextid=rS40aB7S9Ucbxw6v"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/jaiswalabhinav2"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/uf_abhi_17?igsh=MTA1dGp2ODMyYnBnag=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhinav-jaiswal-baa818202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Enter Your Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter Your email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="messages" rows="6" placeholder="Enter Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="reset" class="btn btn2">Reset</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © abhinav. Made with love by Abhinav Jaiswal </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEh2rAvSrwgAfDwfHlnJ9OIkMP6kB2_o9wMS6qK9dpbqKxT8MK1aJtAkcc7j4q8zfk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
